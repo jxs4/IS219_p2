@@ -1,4 +1,4 @@
-// requestAnim shim layer by Paul Irish
+
     window.requestAnimFrame = (function(){
       return  window.requestAnimationFrame       || 
               window.webkitRequestAnimationFrame || 
@@ -12,8 +12,6 @@
   
 
 // example code from mr doob : http://mrdoob.com/lab/javascript/requestanimationframe/
-
-animate();
 
 var mLastFrameTime = 0;
 var mWaitTime = 5000; //time in ms
