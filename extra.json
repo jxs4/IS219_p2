@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imgPath": "img/places/new york.jpg",
+            "imgLocation": "New York City",
+            "description": "New York City",
+            "date": "01/01/2016"
+        },
+        {
+            "imgPath": "img/places/chicago.jpg",
+            "imgLocation": "Chicago",
+            "description": "Chicago",
+            "date": "01/02/2016"
+        },
+        {
+            "imgPath": "img/places/london.jpg",
+            "imgLocation": "London",
+            "description": "London",
+            "date": "01/03/2016"
+        },
+        {
+            "imgPath": "img/places/shanghai.jpg",
+            "imgLocation": "Shanghai",
+            "description": "Shanghai",
+            "date": "01/04/2016"
+        },
+        {
+            "imgPath": "img/places/tokyo.jpg",
+            "imgLocation": "Tokyo",
+            "description": "Tokyo",
+            "date": "01/05/2016"
+        }
+  ]
+}
