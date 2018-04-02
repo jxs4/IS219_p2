@@ -1,4 +1,4 @@
-
+// requestAnim shim layer by Paul Irish
     window.requestAnimFrame = (function(){
       return  window.requestAnimationFrame       || 
               window.webkitRequestAnimationFrame || 
@@ -12,6 +12,8 @@
   
 
 // example code from mr doob : http://mrdoob.com/lab/javascript/requestanimationframe/
+
+
 
 var mLastFrameTime = 0;
 var mWaitTime = 5000; //time in ms
@@ -36,7 +38,7 @@ function swapPhoto() {
 	//with a new image from your images array which is loaded 
 	//from the JSON string
 	console.log('swap photo');
-
+	
 	mCurrentIndex += 1;
 	if (mCurrentIndex == mImages.length) {
 		mCurrentIndex = 0;
@@ -54,8 +56,11 @@ function renderPhoto() {
 	$('.details').eq(0).show();
 }
 
+
 // Counter for the mImages array
 var mCurrentIndex = 0;
+
+
 
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest();
@@ -69,7 +74,6 @@ var mJson;
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = 'insert_url_here_to_image_json';
-
 
 function reqListener () {
   mJson = JSON.parse(this.responseText);
@@ -109,6 +113,7 @@ mRequest.addEventListener("load", reqListener);
 mRequest.open("GET", jsonFile);
 mRequest.send();
 
+
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
 function makeGalleryImageOnloadCallback(galleryImage) {
@@ -146,9 +151,11 @@ $(document).ready( function() {
 
 window.addEventListener('load', function() {
 	
-	console.log('window loaded');
+	console.log('window loaded 1');
 
 }, false);
+
+
 
 function GalleryImage(location, description, date, URL) {
 	//implement me as an object to hold the following data about an image:
@@ -160,4 +167,6 @@ function GalleryImage(location, description, date, URL) {
 	this.description = description;
 	this.date = date;
 	this.URL = URL;
-}
+};
+
+
